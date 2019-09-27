@@ -14,3 +14,5 @@ mycursor.execute("select * from tbl_profiles")
 
 for x in mycursor:
     print("My name is " + x[1])
+
+brothers_db.close()
