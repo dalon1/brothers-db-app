@@ -23,7 +23,8 @@ public class Main {
                     System.out.println("Results: " + rs.getString("first_name"));
                 }
             }
-
+            rs.close();
+            stmt.close();
             conn.close();
         } catch (Exception err) {
             System.out.println("Error found when connecting: " + err);
